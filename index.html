@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EMAX Tech - Innovación, confiabilidad y tecnología avanzada en desarrollo de software y páginas web personalizadas.">
+    <meta name="keywords" content="EMAX Tech, desarrollo de software, desarrollo web, aplicaciones personalizadas, tecnología, innovación">
+    <meta name="author" content="EMAX Tech">
+    <title>EMAX Tech - Innovación y Desarrollo Tecnológico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos Globales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa; /* Fondo gris claro */
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background: #e3e6f0; /* Fondo suave en tono gris claro */
+            padding: 120px 0;
+            text-align: center;
+            color: #003366;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero img {
+            width: 120px;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+        .services-icon {
+            font-size: 3.5rem;
+            color: #003366;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .services-icon:hover {
+            transform: scale(1.2);
+            color: #5a5c69;
+        }
+        .bg-primary-custom {
+            background-color: #5a5c69;
+            color: white;
+        }
+        .bg-secondary-custom {
+            background-color: #6c757d;
+            color: white;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+            animation: fadeInUp 1s ease-out;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #5a5c69;
+            margin: 10px auto 0;
+        }
+        .btn-custom {
+            background-color: #5f99d3;
+            border-color: #5f99d3;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: whitesmoke;
+            transform: scale(1.05);
+        }
+        /* Estilos de Recomendaciones */
+        .testimonial {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+		
+		.logo {
+		border-radius: 50%;
+		}
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .testimonial-text {
+            flex-grow: 1;
+        }
+        .testimonial-text p {
+            margin-bottom: 5px;
+        }
+        .testimonial-text .blockquote-footer {
+		margin-top: 25px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección Hero -->
+    <header class="hero">
+        <div class="container">
+            <img src="img/Emmatech.jpg" alt="Logo de EMAX Tech" class ="logo">
+            <h1 class="mt-4">Bienvenido a EMAX Tech</h1>
+            <p class="lead">Llevamos la innovación y la tecnología al siguiente nivel.</p>
+            <a href="#contacto" class="btn btn-custom btn-lg" id="contactButton">Contáctanos</a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">¿Quiénes somos?</h2>
+            <p class="lead">EMAX Tech es una empresa líder en el desarrollo de software y soluciones web personalizadas. Nuestro objetivo es potenciar la eficiencia y crecimiento de las empresas a través de tecnología avanzada y un enfoque centrado en el cliente. Nos apasiona transformar ideas en soluciones digitales efectivas que realmente marquen la diferencia.</p>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="bg-primary-custom py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code services-icon" aria-hidden="true"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Diseñamos y desarrollamos sitios web atractivos y optimizados para ofrecer la mejor experiencia de usuario en cualquier dispositivo.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cogs services-icon" aria-hidden="true"></i>
+                    <h3>Software a Medida</h3>
+                    <p>Creamos soluciones de software personalizadas que se adaptan perfectamente a los requisitos únicos de tu negocio.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cloud services-icon" aria-hidden="true"></i>
+                    <h3>Aplicaciones Web</h3>
+                    <p>Desarrollamos aplicaciones web escalables y seguras que te permiten llevar tus operaciones al siguiente nivel digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Carrusel de Proyectos -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Proyectos Destacados</h2>
+            <div id="carouselProyectos" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="proyecto1.jpg" class="d-block w-100" alt="Proyecto 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Proyecto 1</h5>
+                            <p>Implementación de una plataforma web interactiva.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="proyecto2.jpg" class="d-block w-100" alt="Proyecto 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Proyecto 2</h5>
+                            <p>Desarrollo de un sistema de gestión empresarial a medida.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="proyecto3.jpg" class="d-block w-100" alt="Proyecto 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Proyecto 3</h5>
+                            <p>Aplicación móvil con integración en la nube.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Recomendaciones Mejorada -->
+    <section id="recomendaciones" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+			 <h3 >Sección en construcción</h3>
+            <div class="testimonial">
+                <img src="cliente1.jpg" alt="Perfil de Juan Pérez">
+                <div class="testimonial-text">
+                    <p>"Trabajar con EMAX Tech ha sido una experiencia fantástica. Su equipo nos ayudó a desarrollar una solución personalizada que transformó nuestros procesos internos."</p>
+                    <footer class="blockquote-footer">Juan Pérez, CEO de <cite title="Source Title">Empresa X</cite></footer>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="cliente2.jpg" alt="Perfil de Ana Gómez">
+                <div class="testimonial-text">
+                    <p>"Gracias a EMAX Tech, ahora tenemos una aplicación web que ha mejorado significativamente nuestros procesos internos."</p>
+                    <footer class="blockquote-footer">Ana Gómez, Directora de <cite title="Source Title">Startup Y</cite></footer>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="cliente3.jpg" alt="Perfil de Carlos López">
+                <div class="testimonial-text">
+                    <p>"La dedicación y el enfoque en los detalles de EMAX Tech son impresionantes. Sin duda, los recomendaría."</p>
+                    <footer class="blockquote-footer">Carlos López, Gerente de <cite title="Source Title">Compañía Z</cite></footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="bg-secondary-custom py-5">
+        <div class="container text-center">
+            <h2 class="section-title">¡Hablemos de tu proyecto!</h2>
+            <p class="lead">Estamos aquí para ayudarte a transformar tus ideas en soluciones digitales efectivas. Contáctanos y descubre cómo EMAX Tech puede hacer crecer tu negocio.</p>
+            <a href="mailto:contacto@emaxtech.com" class="btn btn-light btn-lg" id="contactButton">Envíanos un correo</a>
+        </div>
+    </section>
+
+    <!-- Scripts y Librerías JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        // Efecto de alerta en el botón de contacto
+        document.getElementById('contactButton').addEventListener('click', function() {
+            alert('Gracias por tu interés en EMAX Tech. ¡Nos pondremos en contacto contigo pronto!');
+        });
+
+        // Animaciones al hacer scroll para mostrar elementos
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.scrollY + window.innerHeight - 150; // Ajuste del scroll
+
+            sections.forEach(section => {
+                if (scrollPosition > section.offsetTop + section.offsetHeight / 3) {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                } else {
+                    section.style.opacity = 0;
+                    section.style.transform = 'translateY(50px)';
+                }
+            });
+        });
+
+        // Configuración inicial de las secciones (ocultas con desplazamiento)
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        });
+    </script>
+</body>
+</html>
+
+
+
